@@ -1,0 +1,41 @@
+{
+  "name": "react-comboboxes",
+  "version": "1.0.3",
+  "description": "The Combobox component is a reusable React component that provides a searchable and selectable list of options, designed to be used as an input control. This is an accessible and keyboard-friendly dropdown combobox UI element. Users can select an option from the dropdown list or enter a custom value.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && node copy-css.js",
+    "copy-css": "cp /src/styles/index .css dist/index.css",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "vivek",
+  "keywords": [
+    "react",
+    "component",
+    "typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-package-repo.git"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "babel-loader": "^9.1.3",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1"
+  }
+}
